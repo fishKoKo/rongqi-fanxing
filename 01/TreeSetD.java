@@ -7,7 +7,7 @@ import java.util.TreeSet;
 public class TreeSetD {
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		TreeSet<Student> ts = new TreeSet<Student>(new Comparator<Student>() {
 			
 			public int compare(Student s1, Student s2) {
@@ -19,25 +19,25 @@ public class TreeSetD {
 		});
 		
 		Scanner n = new Scanner(System.in);
-		System.out.println("ÊäÈëÑ§ÉúµÄ¸öÊı£º");
+		System.out.println("è¾“å…¥å­¦ç”Ÿçš„ä¸ªæ•°ï¼š");
 		String n1 = n.nextLine();
 		
 		for(int x = 1; x <= Integer.parseInt(n1); x++){
 			Scanner sc = new Scanner(System.in);
-			System.out.println("ÊäÈëµÚ" + x + "¸öÑ§ÉúµÄÑ§ºÅ£º");
+			System.out.println("è¾“å…¥ç¬¬" + x + "ä¸ªå­¦ç”Ÿçš„å­¦å·ï¼š");
 			String num = sc.nextLine();
-			System.out.println("ÊäÈëµÚ" + x + "¸öÑ§ÉúµÄĞÕÃû£º");
+			System.out.println("è¾“å…¥ç¬¬" + x + "ä¸ªå­¦ç”Ÿçš„å§“åï¼š");
 			String name = sc.nextLine();
-			System.out.println("ÊäÈëµÚ" + x + "¸öÑ§ÉúµÄ×Û²â£º");
+			System.out.println("è¾“å…¥ç¬¬" + x + "ä¸ªå­¦ç”Ÿçš„ç»¼æµ‹ï¼š");
 			String point = sc.nextLine();
 
 			Student s = new Student(num, name, Integer.parseInt(point));
 
 			ts.add(s);
 		}
-		System.out.println("Ñ§ÉúĞÅÏ¢Â¼ÈëÍê±Ï£¡");
+		System.out.println("å­¦ç”Ÿä¿¡æ¯å½•å…¥å®Œæ¯•ï¼");
 
-		System.out.println("Ñ§ÉúĞÅÏ¢°´ÕÕ×Û²â´Ó¸ßµ½µ×ÅÅĞòÈçÏÂ£º");
+		System.out.println("å­¦ç”Ÿä¿¡æ¯æŒ‰ç…§ç»¼æµ‹ä»é«˜åˆ°åº•æ’åºå¦‚ä¸‹ï¼š");
 		for(Student s : ts){
 			System.out.println(s.getNum() + "\t" + s.getName() + "\t" + s.getSum());
 		}
